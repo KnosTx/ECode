@@ -33,6 +33,9 @@ jobs:
         yes | $ANDROID_HOME/cmdline-tools/cmdline-tools/bin/sdkmanager --update
         yes | $ANDROID_HOME/cmdline-tools/cmdline-tools/bin/sdkmanager "platform-tools" "platforms;android-30" "build-tools;30.0.3"
 
+    - name: Adding Permissions To File gradlew
+      run: chmod +x gradlew
+      
     - name: Build APK
       run: ./gradlew assembleRelease
 
