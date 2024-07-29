@@ -4,7 +4,9 @@ plugins {
 }
 
 android {
+    namespace 'com.nurazlib.ecode'
     compileSdkVersion 34
+    
     defaultConfig {
         applicationId "com.nurazlib.ecode"
         minSdkVersion 24
