@@ -1,0 +1,2 @@
+rootProject.name = 'ECode'
+include ':app'
